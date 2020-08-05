@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+ <!--<![endif]-->
+ <head>
+  <meta charset="utf-8"/>
+  <script>
+   (function(){function a(g,h,i){var j=new Date;j.setTime(j.getTime()+1e3*(60*(60*(24*i))));var k="expires="+j.toUTCString(),l=g+"="+h+";"+k+";path=/;";"undefined"!=typeof ezdomain&&(l+="domain="+ezdomain),document.cookie=l}var b=window.addEventListener?"addEventListener":"attachEvent",c=window[b],f="attachEvent"==b?"onmessage":"message";c(f,function(g){"undefined"!=typeof g.data.ezstatus&&(__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("dg",g.data.ezstatus)]),a("ezdg",g.data.ezstatus,730))})})();
+  </script>
+  <script data-cfasync="false" data-ezscrex="false" data-pagespeed-no-defer="">
+   var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck={};__ez.template={};__ez.template.isOrig=true;__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.ck.get=function(e,n){null!==n&&(e=e+"_"+n);for(var o=e+"=",t=decodeURIComponent(document.cookie).split(";"),i=0;i<t.length;i++){for(var c=t[i];" "===c.charAt(0);)c=c.substring(1);if(0===c.indexOf(o))return c.substring(o.length,c.length)}return""},__ez.ck.setByCat=function(e,n){if(-1===e.indexOf("path=")&&(e+="; path=/"),"undefined"!=typeof cmpIsOn){if(null!=n){var o=__ez.ck.get("ezCMPCookieConsent",null);-1!==(o=o.substring(1,o.length)).indexOf(n+"=1")?document.cookie=e:""===o&&"undefined"!=typeof cmpCookies&&(void 0===cmpCookies[n]&&(cmpCookies[n]=[]),cmpCookies[n].push(e))}}else document.cookie=e};__ez.queue=function(){var e=0,i=0,n=[],t=!1,r=[],o=[],s=!0,a={func:function(e,i,t,r,o,s,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=r,this.blockedBy=o,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){d("... func = "+e),l.isInitialized=!0,l.isComplete=!0,d("... func.apply: "+e);var i=l.funcName.split("."),t=null;i.length>3||(t=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=t&&t.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete n[e],!0===l.isBlock&&(d("----- F'D: "+l.name),f())}},file:function(e,i,n,t,r,o,s){var a=this;this.name=e,this.path=i,this.async=r,this.defer=o,this.isBlock=n,this.blockedBy=t,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.isTimeDelay=!1,this.process=function(){a.isInitialized=!0,d("... file = "+e);var n=document.createElement("script");n.src=i,!0===r?n.async=!0:!0===o&&(n.defer=!0),n.onerror=function(){d("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},n.onreadystatechange=n.onload=function(){var e=n.readyState;d("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(n)}}};function l(e){!0!==c(e)&&0!=s&&e.process()}function c(e){if(!0===e.isTimeDelay&&!1===t)return d(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var r=e.blockedBy[i];if(!1===n.hasOwnProperty(r))return d(e.name+" blocked = "+r),!0;if(!0===e.proceedIfError&&!0===n[r].isError)return!1;if(!1===n[r].isComplete)return d(e.name+" blocked = "+r),!0}return!1}function d(e){var i=window.location.href,n=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(n?n[1]:null)&&console.debug(e)}function f(){++e>200||(d("let's go"),u(r),u(o))}function u(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var n=e[i];!0===n.isComplete||c(n)||!0===n.isInitialized||!0===n.isError?!0===n.isError?d(n.name+": error"):!0===n.isComplete?d(n.name+": complete already"):!0===n.isInitialized&&d(n.name+": initialized already"):n.process()}}return window.addEventListener("load",function(){setTimeout(function(){t=!0,d("TDELAY -----"),f()},5e3)},!1),{addFile:function(e,i,t,s,c,d,f,u){var h=new a.file(e,i,t,s,c,d,f);!0===u?r[e]=h:o[e]=h,n[e]=h,l(h)},addDelayFile:function(e,i){var t=new a.file(e,i,!1,[],!1,!1,!0);t.isTimeDelay=!0,d(e+" ...  FILE! TDELAY"),o[e]=t,n[e]=t,l(t)},addFunc:function(e,t,s,c,d,f,u,h,m){!0===f&&(e=e+"_"+i++);var p=new a.func(e,t,s,c,d,u,h);!0===m?r[e]=p:o[e]=p,n[e]=p,l(p)},addDelayFunc:function(e,i,t){var r=new a.func(e,i,t,!1,[],!0,!0);r.isTimeDelay=!0,d(e+" ...  FUNCTION! TDELAY"),o[e]=r,n[e]=r,l(r)},items:n,processAll:f,setallowLoad:function(e){s=e}}}();__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};var __ezDotData=function(e,t){"string"!=typeof e&&2==e.length&&(t=e[1],e=e[0]),this.name=e,this.val=t};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t,r,n,o,i,d,a,_="",f=0;for(e=Base64._utf8_encode(e);f<e.length;)o=(t=e.charCodeAt(f++))>>2,i=(3&t)<<4|(r=e.charCodeAt(f++))>>4,d=(15&r)<<2|(n=e.charCodeAt(f++))>>6,a=63&n,isNaN(r)?d=a=64:isNaN(n)&&(a=64),_=_+this._keyStr.charAt(o)+this._keyStr.charAt(i)+this._keyStr.charAt(d)+this._keyStr.charAt(a);return _},decode:function(e){var t,r,n,o,i,d,a="",_=0;for(e=e.replace(/[^A-Za-z0-9+/=]/g,"");_<e.length;)t=this._keyStr.indexOf(e.charAt(_++))<<2|(o=this._keyStr.indexOf(e.charAt(_++)))>>4,r=(15&o)<<4|(i=this._keyStr.indexOf(e.charAt(_++)))>>2,n=(3&i)<<6|(d=this._keyStr.indexOf(e.charAt(_++))),a+=String.fromCharCode(t),64!=i&&(a+=String.fromCharCode(r)),64!=d&&(a+=String.fromCharCode(n));return a=Base64._utf8_decode(a)},_utf8_encode:function(e){e=e.replace(/rn/g,"n");for(var t="",r=0;r<e.length;r++){var n=e.charCodeAt(r);n<128?t+=String.fromCharCode(n):(127<n&&n<2048?t+=String.fromCharCode(n>>6|192):(t+=String.fromCharCode(n>>12|224),t+=String.fromCharCode(n>>6&63|128)),t+=String.fromCharCode(63&n|128))}return t},_utf8_decode:function(e){for(var t="",r=0,n=c1=c2=0;r<e.length;)(n=e.charCodeAt(r))<128?(t+=String.fromCharCode(n),r++):191<n&&n<224?(c2=e.charCodeAt(r+1),t+=String.fromCharCode((31&n)<<6|63&c2),r+=2):(c2=e.charCodeAt(r+1),c3=e.charCodeAt(r+2),t+=String.fromCharCode((15&n)<<12|(63&c2)<<6|63&c3),r+=3);return t}},__ez.dot.dataToStr=function(e){if(void 0===e)return[];try{for(var t in e)e[t].val=e[t].val+""}catch(e){}return e},__ez.dot.getCC=function(){var e="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(e=_ezaq.country),e},__ez.dot.getDID=function(){var e="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e=_ezaq.domain_id.toString()),e},__ez.dot.getEpoch=function(e){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(e=_ezaq.t_epoch),e},__ez.dot.getPageviewId=function(){var e="";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("page_view_id")&&(e=_ezaq.page_view_id),e},__ez.dot.getURL=function(e){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(e="//g.ezoic.net"+e),e},__ez.dot.isValid=function(e){for(var t=0;t<e.length;t++)if(e[t]instanceof __ezDotData==!1)return console.error("Invalid data. ",e[t]),!1;return!0},__ez.dot.isDefined=function(){for(var e=0;e<arguments.length;e++)if(null==arguments[e])return console.error("Argument not defined. ",arguments),!1;return!0},__ez.dot.isAnyDefined=function(){for(var e=!1,t=0;t<arguments.length;t++)null!=arguments[t]&&(e=!0);return 0==e&&console.error("isAnyDefined Arguments not defined. ",arguments),e},__ez.dot.getSlotIID=function(e){var t="0";try{var r=__ez.dot.getTargetingMap(e);if(-1===__ez.dot.getElementId(e).indexOf("div-gpt-ad"))return t;if(void 0!==r)for(var n in r)if(-1!==n.indexOf("iid")&&void 0!==r[n][0]){t=r[n][0];break}}catch(e){}return t},__ez.dot.getElementId=function(e){return void 0!==e.ElementId?e.ElementId:e.getSlotElementId()},__ez.dot.getAdUnitPath=function(e){return void 0!==e.AdUnitPath?e.AdUnitPath:e.getAdUnitPath()},__ez.dot.getSizes=function(e){return void 0!==e.Sizes?e.Sizes:e.getSizes()},__ez.dot.getTargeting=function(e,t){return void 0!==e.Targeting?e.Targeting[t]:e.getTargeting(t)[0]},__ez.dot.getTargetingMap=function(e){return void 0!==e.Targeting?e.Targeting:e.getTargetingMap()},__ez.dot.getAdUnit=function(e){return!0===__ez.template.isOrig?__ez.dot.getAdUnitPath(e).split("/").pop()+"|~ez~|"+__ez.dot.getElementId(e):__ez.dot.getElementId(e)};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();
+  </script>
+  <script data-cfasync="false" data-ezscrex="false" data-pagespeed-no-defer="">
+   __ez.pel=function(){var u=[],i="/porpoiseant/army.gif";function t(e,i,t,_,d,o,n){if(__ez.dot.isDefined(e)&&0!=__ez.dot.isAnyDefined(e.getSlotElementId,e.ElementId)){var r=parseInt(__ez.dot.getTargeting(e,"ap")),a=__ez.dot.getSlotIID(e),s=__ez.dot.getAdUnit(e),p=parseInt(__ez.dot.getTargeting(e,"compid")),z=0,f=0,g=function(e){if("undefined"==typeof _ezim_d)return!1;var i=__ez.dot.getAdUnitPath(e).split("/").pop();if("object"==typeof _ezim_d&&_ezim_d.hasOwnProperty(i))return _ezim_d[i];for(var t in _ezim_d)if(t.split("/").pop()===i)return _ezim_d[t];return!1}(e);"object"==typeof g&&(void 0!==g.creative_id&&(f=g.creative_id),void 0!==g.line_item_id&&(z=g.line_item_id)),__ez.dot.isDefined(a,s)&&__ez.dot.isValid(i)&&u.push({type:"impression",impression_id:a,domain_id:__ez.dot.getDID(),unit:s,t_epoch:__ez.dot.getEpoch(0),revenue:t,est_revenue:_,ad_position:r,ad_size:"",bid_floor_filled:d,bid_floor_prev:o,stat_source_id:n,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:p,line_item_id:z,creative_id:f,data:__ez.dot.dataToStr(i)})}}function _(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(u)&&0<u.length){var e=__ez.dot.getURL(i)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(u));void 0!==window.isAmp&&isAmp&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e+="&visit_uuid="+_ezaq.visit_uuid),(new Image).src=e}u=[]}}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),_()},AddById:function(e,i){var t=e.split("/");if(__ez.dot.isDefined(e)&&3===t.length&&__ez.dot.isValid(i)){var _=t[0],d=t[2];u.push({type:"impression",impression_id:d,domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(i)})}},Fire:_,GetPixels:function(){return u}}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&!0===ezJsu||"undefined"!=typeof _ez_sa&&!0===_ez_sa||void 0!==window.isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(e,i){this.name=e,this.val=i};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(e,i){this.AddImpPixel(e,i,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(e,i){this.AddPVPixel(e,i),this.FirePixels()},AddImpPixel:function(e,i,t,n,o,a,d){if(0!=__ez.dot.isDefined(e)&&0!=__ez.dot.isAnyDefined(e.getSlotElementId,e.ElementId)){var s=parseInt(__ez.dot.getTargeting(e,"ap")),r=__ez.dot.getSizes(e)[0],_=r.l.toString()+"x"+r.j.toString(),p="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(p=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var h=__ez.dot.getSlotIID(e),c=__ez.dot.getSlotElementId(e);__ez.dot.isDefined(h,c)&&this.validateData(i)&&(i=this.convertDataToStr(i),this.pixels.push({type:"impression",impression_id:h,domain_id:p,unit:c,t_epoch:this.tEpoch,revenue:t,est_revenue:n,ad_position:s,ad_size:_,bid_floor_filled:o,bid_floor_prev:a,stat_source_id:d,country_code:l,data:i}))}},AddImpPixelById:function(e,i){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString());var n=e.split("/");if(__ez.dot.isDefined(e)&&3===n.length&&this.validateData(i)){var o=n[0],a=n[2];i=this.convertDataToStr(i),this.pixels.push({type:"impression",impression_id:a,domain_id:t,unit:o,t_epoch:this.tEpoch,data:i})}},AddPVPixel:function(e,i){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString()),__ez.dot.isDefined(e)&&this.validateData(i)&&(i=this.convertDataToStr(i),this.pixels.push({type:"pageview",pageview_id:e,domain_id:t,t_epoch:this.tEpoch,data:i}))},FirePixels:function(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(this.pixels)&&0<this.pixels.length&&((new Image).src=this.pixelUrl+"?orig="+(!0===__ez.template.isOrig?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(e,i){return new EzoicPixelData(e,i)},convertDataToStr:function(e){if(void 0===e)return[];try{for(var i in e)e[i].val=e[i].val+""}catch(e){}return e},validateData:function(e){for(var i=0;i<e.length;i++)if(e[i]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",e[i]),!1;return!0}};
+  </script>
+  <script data-cfasync="false" data-ezscrex="false">
+   (function(){if("function"===typeof window.CustomEvent)return!1;window.CustomEvent=function(c,a){a=a||{bubbles:!1,cancelable:!1,detail:null};var b=document.createEvent("CustomEvent");b.initCustomEvent(c,a.bubbles,a.cancelable,a.detail);return b}})();
+  </script>
+  <script data-cfasync="false" data-ezscrex="false">
+   window.requestIdleCallback=window.requestIdleCallback||function(b){var a=Date.now();return setTimeout(function(){b({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-a))}})},1)};
+(function(){function b(c,e){for(var d=[],f=0;f<c;f++){for(var h=f*e*Math.random(),k=!0,l=2;l<=Math.sqrt(h);++l)if(0===h%l){k=!1;break}k&&d.push(h)}return d}function a(){var c=this;c.g=0;setInterval(function(){c.g++},1E3)}if("1"==window.ihajsdjhsadhjk){var g=new a;b(6,g);window.ihajsdjhsadhjk=null;window.doezifk="1"}"1"==window.doezifk&&(b(50,1E9),pointlessComputationsButton.disabled=!1,window.doezifk=null,window.ihajsdjhsadhjk="1");if("function"===typeof window.EzoIvent)return!1;window.EzoIvent=function(c,
+e){e=e||{bubbles:!1,cancelable:!1,detail:null};var d=document.createEvent("EzoIvent");d.initCustomEvent(c,e.bubbles,e.cancelable,e.detail);return d}})();__ez.a=[];__ez.a[0]=0;__ez.a[1]=45;__ez.a[2]=[];__ez.a[3]=0;__ez.a[4]=1;__ez.a[5]=[];
+_findOverlappingQuietPeriods=function(b,a){var g=a.slice(),c=b.slice();g.shift();c.shift();var e=[];g.forEach(function(d){c.forEach(function(f){d.start>=f.start?f.end>=d.start+55&&e.push({b:d,i:f,h:a,j:b,f:Math.min(d.duration,f.duration)}):d.end>=f.start+55&&e.push({b:d,i:f,h:a,j:b,f:Math.min(d.duration,f.duration)})})});if(0<e.length)return e};var m=0;
+_findNetworkQuietPeriods=function(b,a,g){0==m&&(m=a-1);a=[];for(var c in b){var e=b[c];0>e.end&&(e.end=99);a.push({time:e.start,c:!0});0<e.end&&a.push({time:e.end,c:!1})}a.sort(function(k,l){return k.time-l.time});var d=0,f=m,h=[];a.forEach(function(k){k.c?(d===__ez.a[4]&&h.push({start:f,end:k.time,duration:k.time-f}),d++):(d--,d===__ez.a[4]&&(f=k.time))});d<=__ez.a[4]&&h.push({start:f,end:g,duration:g-f});return h};
+(function(){if("undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(19)){var b=window.setInterval;window.setInterval=function(a,g){var c=g;90>c&&56!=c&&(c=90);return 3>arguments.length?b(a,c):b(a.bind(window,Array.prototype.slice.call(arguments).slice(3)),c)}}})();
+(function(){if("undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(19)){var b=window.setTimeout;window.setTimeout=function(a,g){var c=g;90>c&&(c=90);return 3>arguments.length?b(a,c):b(a.bind(window,Array.prototype.slice.call(arguments).slice(3)),c)}}})();
+(function(){function b(){var c=new a;"undefined"!=typeof this.open?c.open=this.open:this.open=a.open;"undefined"!=typeof this.abort?c.abort=this.abort:this.open=a.open;"undefined"!=typeof this.getAllResponseHeaders?c.getAllResponseHeaders=this.getAllResponseHeaders:this.getAllResponseHeaders=a.getAllResponseHeaders;"undefined"!=typeof this.getResponseHeader?c.getResponseHeader=this.getResponseHeader:this.getResponseHeader=a.getResponseHeader;"undefined"!=typeof this.overrideMimeType?c.overrideMimeType=
+this.overrideMimeType:this.overrideMimeType=a.overrideMimeType;"undefined"!=typeof this.setRequestHeader?c.setRequestHeader=this.setRequestHeader:this.setRequestHeader=a.setRequestHeader;var e=Math.random();c.addEventListener("loadstart",function(d){window.ezorqs(d,e)});c.addEventListener("loadend",function(d){window.ezorqe(d,e)});c.addEventListener("error",function(d){window.ezorqe(d,e)});c.addEventListener("abort",function(d){window.ezorqe(d,e)});return c}var a=window.XMLHttpRequest;b.prototype=
+a.prototype;for(var g in a)b[g]=a[g];window.XMLHttpRequest=b})();window.ezoFetchConst=window.fetch;window.fetch=function(b){var a=arguments,g=this,c=Math.random();window.ezorqs(b,c);return new Promise(function(e,d){window.ezoFetchConst.apply(g,a).then(function(f){window.ezorqe(f,c);e(f)})["catch"](function(f){window.ezorqe(f,c);d(f)})})};
+document.addEventListener("DOMContentLoaded",function(){window.ezodomstart=Date.now();if("requestIdleCallback"in window){var b=0;window.ezoIint=setInterval(function(){window.requestIdleCallback(function(a){var g=Date.now();a=a.timeRemaining();a<Date.now()&&(a>__ez.a[1]?0==b&&(b=g):0!=b&&(a={start:b,end:g-(50-a)},a.duration=a.end-a.start,55<=a.duration&&(__ez.a[5].push(a),window.ezocfol(g)),b=0))})},56)}else window.dispatchEvent(new CustomEvent("EzoIvent",{detail:[-1,-1]})),clearInterval(window.ezoIint)});
+"undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(16)&&(window.addEventListener("load",function(){window.__ez__w_load=!0}),window.addEventListener("DOMContentLoaded",function(){window.__ez__w_dom=!0}),"undefined"!==typeof window.__ez.sshsdef&&!1===window.__ez.sshsdef&&function(){if(Element.prototype.addEventListener){window.__ez__ael=window.addEventListener;window.__ez__ael__proto=window.__ez__ael.prototype;var b=function(){"domcontentloaded"==arguments[0].toLowerCase()?arguments[0]=
+"EzoicDOMContentLoaded":"load"==arguments[0].toLowerCase()&&(arguments[0]="Ezoicload");window.__ez__ael.apply(window,arguments)};window.__ez__ael.prototype=window.__ez__ael__proto;window.addEventListener=b;document.addEventListener=b}}());window.ezorqs=function(b,a){indexKey=window.ezogetrqbykey(a);"undefined"==typeof indexKey&&(__ez.a[2].push({start:Date.now(),end:-1,id:a}),__ez.a[3]++,setTimeout(function(){window.ezorqe(b,a)},2E3))};
+window.ezorqe=function(b,a,g){indexKey=window.ezogetrqbykey(a);"undefined"!=typeof indexKey&&-1==__ez.a[2][indexKey].end?(__ez.a[2][indexKey].end=Date.now(),__ez.a[3]--):1==g&&__ez.a[3]--};
+window.ezocfol=function(b){b=_findNetworkQuietPeriods(__ez.a[2],window.ezodomstart,b);b=_findOverlappingQuietPeriods(b,__ez.a[5]);if("undefined"!=typeof b){var a=0,g=Math.max(b[b.length-1].b.end,b[b.length-1].b.end);b.forEach(function(c){a+=Math.floor(c.f/55)});(a>=__ez.sswp&&1<a||10<=a||g<Date.now()-5E3)&&clearInterval(window.ezoIint);__ez.a[0]=a;window.dispatchEvent(new CustomEvent("EzoIvent",{detail:[__ez.a[0],50]}))}};
+window.ezogetrqbykey=function(b){for(var a=0,g=__ez.a[2].length;a<g;a++)if(__ez.a[2][a].id==b)return a};__ez.nap=__ez.a;
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script data-cfasync="false" id="ao_optimized_gfonts_config">
+   WebFontConfig={google:{families:["Lato"] },classes:false, events:false, timeout:1500};
+  </script>
+  <link href="https://gmpg.org/xfn/11" rel="profile"/>
+  <script>
+   function fvmuag(){if(navigator.userAgent.match(/x11.*fox\/54|oid\s4.*xus.*ome\/62|oobot|ighth|tmetr|eadles|ingdo/i))return!1;if(navigator.userAgent.match(/x11.*ome\/75\.0\.3770\.100/i)){var e=screen.width,t=screen.height;if("number"==typeof e&&"number"==typeof t&&862==t&&1367==e)return!1}return!0}
+  </script>
+  <link href="https://vitux.com/wp-content/cache/autoptimize/css/autoptimize_51e6b3e4e19132b152459c6acb0af71e.css" media="all" rel="stylesheet"/>
+  <title>
+   How to Change sudo Password in Ubuntu
+  </title>
+  <!-- This site is optimized with the Yoast SEO plugin v13.2 - https://yoast.com/wordpress/plugins/seo/ -->
+  <meta content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots">
+   <link href="https://vitux.com/how-to-change-sudo-password-in-ubuntu/" rel="canonical"/>
+   <meta content="en_US" property="og:locale"/>
+   <meta content="article" property="og:type"/>
+   <meta content="How to Change sudo Password in Ubuntu" property="og:title"/>
+   <meta content="If you are a new Ubuntu admin user, you might want to know how to change the password in Ubuntu Linux server through bash shell or the command line. After all, it is a good security practice to change passwords" property="og:description"/>
+   <meta content="https://vitux.com/how-to-change-sudo-password-in-ubuntu/" property="og:url"/>
+   <meta content="VITUX" property="og:site_name"/>
+   <meta content="https://www.facebook.com/vituxcom/" property="article:publisher"/>
+   <meta content="Ubuntu" property="article:section"/>
+   <meta content="2018-11-29T10:39:53+00:00" property="article:published_time"/>
+   <meta content="2019-02-04T14:35:22+00:00" property="article:modified_time"/>
+   <meta content="2019-02-04T14:35:22+00:00" property="og:updated_time"/>
+   <meta content="https://vitux.com/wp-content/uploads/2018/11/ubuntu-change-sudo-password.jpg" property="og:image"/>
+   <meta content="https://vitux.com/wp-content/uploads/2018/11/ubuntu-change-sudo-password.jpg" property="og:image:secure_url"/>
+   <meta content="1024" property="og:image:width"/>
+   <meta content="512" property="og:image:height"/>
+   <meta content="summary_large_image" name="twitter:card"/>
+   <meta content="If you are a new Ubuntu admin user, you might want to know how to change the password in Ubuntu Linux server through bash shell or the command line. After all, it is a good security practice to change passwords" name="twitter:description"/>
+   <meta content="How to Change sudo Password in Ubuntu" name="twitter:title"/>
+   <meta content="@vituxcom" name="twitter:site"/>
+   <meta content="https://vitux.com/wp-content/uploads/2018/11/ubuntu-change-sudo-password.jpg" name="twitter:image"/>
+   <meta content="@vituxcom" name="twitter:creator"/>
+   <script class="yoast-schema-graph yoast-schema-graph--main" type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://vitux.com/#website","url":"https://vitux.com/","name":"VITUX","inLanguage":"en-US","description":"Linux Compendium","publisher":{"@id":"https://vitux.com/#/schema/person/"},"potentialAction":{"@type":"SearchAction","target":"https://vitux.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#primaryimage","inLanguage":"en-US","url":"https://vitux.com/wp-content/uploads/2018/11/ubuntu-change-sudo-password.jpg","width":1024,"height":512,"caption":"Change sudo password in Ubuntu"},{"@type":"WebPage","@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#webpage","url":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/","name":"How to Change sudo Password in Ubuntu","isPartOf":{"@id":"https://vitux.com/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#primaryimage"},"datePublished":"2018-11-29T10:39:53+00:00","dateModified":"2019-02-04T14:35:22+00:00"},{"@type":"Article","@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#article","isPartOf":{"@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#webpage"},"author":{"@id":"https://vitux.com/#/schema/person/d22013a52cb8122b01cb50f7647be2f1"},"headline":"How to Change sudo Password in Ubuntu","datePublished":"2018-11-29T10:39:53+00:00","dateModified":"2019-02-04T14:35:22+00:00","commentCount":0,"mainEntityOfPage":{"@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#webpage"},"publisher":{"@id":"https://vitux.com/#/schema/person/"},"image":{"@id":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/#primaryimage"},"articleSection":"Linux,Ubuntu","inLanguage":"en-US"},{"@type":["Person"],"@id":"https://vitux.com/#/schema/person/d22013a52cb8122b01cb50f7647be2f1","name":"Karim Buzdar","sameAs":[]}]}
+   </script>
+   <!-- / Yoast SEO plugin. -->
+   <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+   <link href="https://ajax.googleapis.com" rel="preconnect"/>
+   <link href="https://fonts.googleapis.com" rel="preconnect"/>
+   <link href="https://vitux.com/feed/" rel="alternate" title="VITUX » Feed" type="application/rss+xml"/>
+   <link href="https://vitux.com/comments/feed/" rel="alternate" title="VITUX » Comments Feed" type="application/rss+xml"/>
+   <link href="//vitux.com/wp-content/uploads/sass/a3_lazy_load.min.css" id="a3a3_lazy_load-css" media="all" rel="stylesheet" type="text/css"/>
+   <script type="text/javascript">
+    /*  */
+var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:\/\/vitux.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":"2608","token":"031a3e6186","debug":""};
+/*  */
+   </script>
+   <script defer="" src="https://vitux.com/wp-content/uploads/cache/fvm/1583252803/out/header-5164b3ccf92958302ee1014c2cd8dce27bccbfa6.min.js" type="text/javascript">
+   </script>
+   <!--[if lte IE 8]> <script type='text/javascript' src='https://vitux.com/wp-content/themes/spacious/js/html5shiv.min.js'></script> <![endif]-->
+   <link href="https://vitux.com/wp-json/" rel="https://api.w.org/"/>
+   <link href="https://vitux.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+   <link href="https://vitux.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+   <meta content="WordPress 5.3.2" name="generator"/>
+   <link href="https://vitux.com/?p=2608" rel="shortlink"/>
+   <link href="https://vitux.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvitux.com%2Fhow-to-change-sudo-password-in-ubuntu%2F" rel="alternate" type="application/json+oembed"/>
+   <link href="https://vitux.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvitux.com%2Fhow-to-change-sudo-password-in-ubuntu%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+   <script async="" data-ad-client="ca-pub-3536364066785075" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+   </script>
+   <script data-cfasync="false" id="ao_optimized_gfonts_webfontloader">
+    (function() {var wf = document.createElement('script');wf.src='https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf, s);})();
+   </script>
+   <script type="text/javascript">
+    var ezouid = "1";
+   </script>
+   <base href="https://vitux.com/how-to-change-sudo-password-in-ubuntu/"/>
+   <script type="text/javascript">
+    var ezoTemplate = 'old_site_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+   </script>
+   <!-- START EZHEAD -->
+   <script data-ezscrex="false" type="text/javascript">
+    var soc_app_id = '0';
+var did = 177389;
+var ezdomain = 'vitux.com';
+var ezoicSearchable = 1;
+   </script>
+   <!--{jquery}-->
+   <!-- END EZHEAD -->
+   <script data-cfasync="false" data-ezscrex="false" type="text/javascript">
+    var _ezaq = {"ad_cache_level":0,"city":"Hyderabad","country":"IN","days_since_last_visit":-1,"domain_id":177389,"engaged_time_visit":0,"ezcache_level":2,"forensiq_score":-1,"form_factor_id":1,"framework_id":1,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"568753de-6bf5-49d4-69be-6333ba9bef8c","position_selection_id":0,"postal_code":"500001","pv_event_count":0,"response_time_orig":3,"serverid":"54.169.74.49:12342","state":"TG","t_epoch":1583334052,"template_id":120,"time_on_site_visit":0,"url":"https://vitux.com/how-to-change-sudo-password-in-ubuntu/","user_id":0,"word_count":821,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";
+   </script>
+   <script async="" data-cfasync="false" data-ezscrex="false" src="/detroitchicago/rochester.js?cb=188-0&amp;v=8" type="text/javascript">
+   </script>
+   <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript">
+   </script>
+   <script data-cfasync="false" data-ezscrex="false" data-pagespeed-no-defer="">
+    function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_177389=" + new Date().getTime() + "|568753de-6bf5-49d4-69be-6333ba9bef8c|false; " + expires, 3);
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+   </script>
+  </meta>
+ </head>
+ <body class="post-template-default single single-post postid-2608 single-format-standard better-responsive-menu">
+  <div class="hfeed site" id="page">
+   <a class="skip-link screen-reader-text" href="#main">
+    Skip to content
+   </a>
+   <header class="site-header clearfix spacious-header-display-one" id="masthead">
+    <div class="" id="header-text-nav-container">
+     <div class="inner-wrap" id="spacious-header-display-one">
+      <div class="clearfix" id="header-text-nav-wrap">
+       <div id="header-left-section">
+        <div class="" id="header-text">
+         <h3 id="site-title">
+          <a href="https://vitux.com/" rel="home" title="VITUX">
+           VITUX
+          </a>
+         </h3>
+         <p id="site-description">
+          Linux Compendium
+         </p>
+         <!-- #site-description -->
+        </div>
+        <!-- #header-text -->
+       </div>
+       <!-- #header-left-section -->
+       <div id="header-right-section">
+        <div class="header-action">
+        </div>
+        <nav class="main-navigation clearfix" id="site-navigation" role="navigation">
+         <p class="menu-toggle">
+          Menu
+         </p>
+         <div class="menu-primary-container">
+          <ul class="menu" id="menu-top-menu">
+           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-18" id="menu-item-18">
+            <a href="https://vitux.com/">
+             Home
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1018" id="menu-item-1018">
+            <a href="https://vitux.com/linux/">
+             Linux
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77" id="menu-item-77">
+            <a href="https://vitux.com/centos/">
+             CentOS
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-109" id="menu-item-109">
+            <a href="https://vitux.com/debian/">
+             Debian
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-78" id="menu-item-78">
+            <a href="https://vitux.com/ubuntu/">
+             Ubuntu
+            </a>
+           </li>
+           <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1017" id="menu-item-1017">
+            <a href="https://vitux.com/shell/">
+             Shell
+            </a>
+           </li>
+          </ul>
+         </div>
+        </nav>
+       </div>
+       <!-- #header-right-section -->
+      </div>
+      <!-- #header-text-nav-wrap -->
+     </div>
+     <!-- .inner-wrap -->
+    </div>
+    <!-- #header-text-nav-container -->
+    <div class="header-post-title-container clearfix">
+     <div class="inner-wrap">
+      <div class="post-title-wrapper">
+       <h1 class="header-post-title-class">
+        How to Change sudo Password in Ubuntu
+       </h1>
+      </div>
+     </div>
+    </div>
+   </header>
+   <div class="clearfix" id="main">
+    <div class="inner-wrap">
+     <div id="primary">
+      <div class="clearfix" id="content">
+       <article class="post-2608 post type-post status-publish format-standard has-post-thumbnail hentry category-linux category-ubuntu" id="post-2608">
+        <div class="entry-content clearfix">
+         <p>
+          If you are a new Ubuntu admin user, you might want to know how to change the password in Ubuntu Linux server through bash shell or the command line. After all, it is a good security practice to change passwords for any user, especially the Super User, who can perform all sensitive operations on Ubuntu. Only a SuperUser or root can change the password for any user account. Other users can only change their own passwords.
+         </p>
+         <p>
+          User passwords are changed in Ubuntu using the passwd command.
+         </p>
+         <p>
+          In this article, we will explain how a root user can change his/her own password on a Ubuntu server.
+         </p>
+         <p>
+          We have run the commands and procedures mentioned in this article on a Ubuntu 18.04 LTS system.
+         </p>
+         <p>
+          Need help in creating a strong password? Then take a look here:
+          <a href="https://vitux.com/7-methods-to-generate-a-strong-password-in-ubuntu/" title="7 Methods to Generate a Strong Password in Ubuntu">
+           7 Methods to Generate a Strong Password in Ubuntu
+          </a>
+         </p>
+         <h2>
+          Step 1: Open the Ubuntu command line
+         </h2>
+         <p>
+          We need to use the Ubuntu command line, the Terminal, in order to change the sudo password. Open the Terminal either through the system Dash or the Ctrl+Alt+T shortcut.
+         </p>
+         <h2>
+          Step 2: Log in as root user
+         </h2>
+         <p>
+          Only a root user can change his/her own password. Therefore you need to log in as root first. Enter the following command to do so:
+         </p>
+         <pre>@ sudo -i</pre>
+         <p>
+          The system will prompt you to enter the current sudo password. Please enter the password and hit Enter.
+         </p>
+         <p>
+          <img alt="Become root user on Ubuntu" class="lazy lazy-hidden aligncenter wp-image-2609" data-lazy-type="image" data-src="https://vitux.com/wp-content/uploads/2018/11/word-image-187.png" data-srcset="https://vitux.com/wp-content/uploads/2018/11/word-image-187.png 309w, https://vitux.com/wp-content/uploads/2018/11/word-image-187-300x60.png 300w" height="62" sizes="(max-width: 309px) 100vw, 309px" src="//vitux.com/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" srcset="" width="309"/>
+          <noscript>
+           <img alt="Become root user on Ubuntu" class="aligncenter wp-image-2609" height="62" sizes="(max-width: 309px) 100vw, 309px" src="https://vitux.com/wp-content/uploads/2018/11/word-image-187.png" srcset="https://vitux.com/wp-content/uploads/2018/11/word-image-187.png 309w, https://vitux.com/wp-content/uploads/2018/11/word-image-187-300x60.png 300w" width="309"/>
+          </noscript>
+         </p>
+         <p>
+          Now you will be logged in as root user; you can see that indication in the command prompt.
+         </p>
+         <h2>
+          Step 3: Change the sudo password through the passwd command
+         </h2>
+         <p>
+          Now that you are logged in as root, you can change the passwd for the current (root) user by using the passwd command as follows:
+         </p>
+         <pre>$ passwd</pre>
+         <p>
+          <img alt="Change root password on Ubuntu" class="lazy lazy-hidden aligncenter wp-image-2610" data-lazy-type="image" data-src="https://vitux.com/wp-content/uploads/2018/11/word-image-188.png" data-srcset="https://vitux.com/wp-content/uploads/2018/11/word-image-188.png 341w, https://vitux.com/wp-content/uploads/2018/11/word-image-188-300x84.png 300w" height="96" sizes="(max-width: 341px) 100vw, 341px" src="//vitux.com/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" srcset="" width="341"/>
+          <noscript>
+           <img alt="Change root password on Ubuntu" class="aligncenter wp-image-2610" height="96" sizes="(max-width: 341px) 100vw, 341px" src="https://vitux.com/wp-content/uploads/2018/11/word-image-188.png" srcset="https://vitux.com/wp-content/uploads/2018/11/word-image-188.png 341w, https://vitux.com/wp-content/uploads/2018/11/word-image-188-300x84.png 300w" width="341"/>
+          </noscript>
+         </p>
+         <p>
+          When you enter the passwd command, the system will prompt you to enter the new UNIX root password. When you enter the new password and hit enter, the system will prompt you to retype the new UNIX root password. After doing so, the system will confirm that the password is updated successfully.
+         </p>
+         <p>
+          Now whenever you need to log in as root or perform any installation and configuration operation that requires root authorization, you will be using this new password.
+         </p>
+         <h2>
+          Step 4: Exit the root login and then the Terminal
+         </h2>
+         <p>
+          When you are done with changing the password, you can log out of the root prompt by entering the following command.
+         </p>
+         <pre>$ exit</pre>
+         <p>
+          Once you are logged out, type the exit command again to exit the Terminal application.
+         </p>
+         <h2>
+          An Alternative
+         </h2>
+         <p>
+          A simple alternative is to enter the following command that lets you log in as root and enter the password changing command for root, in a single command:
+         </p>
+         <pre>$ sudo passwd root</pre>
+         <p>
+          When you enter the above command, the system will prompt you to enter the new UNIX root password. When you enter the new password and hit enter, the system will prompt you to retype the new UNIX root password. After doing so, the system will confirm that the password is updated successfully.
+         </p>
+         <p>
+          By the help of this article, you can change the password for sudo and make your system secure from any malicious activity time and again.
+         </p>
+         <p>
+         </p>
+         <div class="extra-hatom-entry-title">
+          <span class="entry-title">
+           How to Change sudo Password in Ubuntu
+          </span>
+         </div>
+        </div>
+        <footer class="entry-meta-bar clearfix">
+         <div class="entry-meta clearfix">
+          <span class="by-author author vcard">
+           <a class="url fn n" href="https://vitux.com/author/karim/">
+            Karim Buzdar
+           </a>
+          </span>
+          <span class="date">
+           <a href="https://vitux.com/how-to-change-sudo-password-in-ubuntu/" rel="bookmark" title="10:39 am">
+            <time class="entry-date published" datetime="2018-11-29T10:39:53+00:00">
+             November 29, 2018
+            </time>
+            <time class="updated" datetime="2019-02-04T14:35:22+00:00">
+             February 4, 2019
+            </time>
+           </a>
+          </span>
+          <span class="category">
+           <a href="https://vitux.com/linux/" rel="category tag">
+            Linux
+           </a>
+           ,
+           <a href="https://vitux.com/ubuntu/" rel="category tag">
+            Ubuntu
+           </a>
+          </span>
+         </div>
+        </footer>
+       </article>
+       <ul class="default-wp-page clearfix">
+        <li class="previous">
+         <a href="https://vitux.com/install-python3-on-ubuntu-and-set-up-a-virtual-programming-environment/" rel="prev">
+          <span class="meta-nav">
+           ←
+          </span>
+          Install Python3 on Ubuntu 18.04 and Set Up a Virtual Programming Environment
+         </a>
+        </li>
+        <li class="next">
+         <a href="https://vitux.com/find-devices-connected-to-your-network-with-nmap/" rel="next">
+          Find Devices Connected to Your Network with nmap
+          <span class="meta-nav">
+           →
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- #content -->
+     </div>
+     <!-- #primary -->
+     <div id="secondary">
+      <aside class="widget_text widget widget_custom_html" id="custom_html-3">
+       <div class="textwidget custom-html-widget">
+        <!-- EZOIC_REMOVE_BEGIN -->
+        <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7IVKQW&placement=vituxcom" id="_carbonads_js"></script> -->
+        <!-- EZOIC_REMOVE_END -->
+       </div>
+      </aside>
+      <aside class="widget widget_search" id="search-3">
+       <h3 class="widget-title">
+        <span>
+         Search
+        </span>
+       </h3>
+       <form action="https://vitux.com/" class="search-form searchform clearfix" method="get">
+        <div class="search-wrap">
+         <input class="s field" name="s" placeholder="Search" type="text"/>
+         <button class="search-icon" type="submit">
+         </button>
+        </div>
+       </form>
+       <!-- .searchform -->
+      </aside>
+      <aside class="widget widget_text" id="text-3">
+       <h3 class="widget-title">
+        <span>
+         About This Site
+        </span>
+       </h3>
+       <div class="textwidget">
+        <p>
+         Vitux.com aims to become a Linux compendium with lots of unique and up to date tutorials.
+        </p>
+       </div>
+      </aside>
+      <aside class="widget popular-posts" id="wpp-5">
+       <h3 class="widget-title">
+        <span>
+         Most Popular
+        </span>
+       </h3>
+       <!-- cached -->
+       <!-- WordPress Popular Posts -->
+       <ul class="wpp-list">
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-write-and-run-a-c-program-in-linux/" target="_self">
+          How to Write and Run a C Program in Linux
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on January 22, 2020
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-uninstall-programs-from-your-ubuntu-system/" target="_self">
+          How to Uninstall Programs from your Ubuntu System
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on November 6, 2018
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/get-linux-system-and-hardware-details-on-the-command-line/" target="_self">
+          Get Linux System and Hardware Details on the Command Line
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on January 26, 2020
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-4" href="https://vitux.com/centos/">
+            CentOS
+           </a>
+           ,
+           <a class="category category-6" href="https://vitux.com/debian/">
+            Debian
+           </a>
+           ,
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-8" href="https://vitux.com/shell/">
+            Shell
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-create-a-bootable-usb-stick-from-the-ubuntu-terminal/" target="_self">
+          How to Create a Bootable USB Stick from the Ubuntu Terminal
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on January 18, 2020
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-8" href="https://vitux.com/shell/">
+            Shell
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-install-xampp-on-your-ubuntu-18-04-lts-system/" target="_self">
+          How to Install XAMPP on your Ubuntu 18.04 LTS System
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on October 2, 2018
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-install-ubuntu-18-04-along-with-windows-10/" target="_self">
+          How to Install Ubuntu 18.04 along with Windows 10
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on June 29, 2018
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-shut-down-ubuntu/" target="_self">
+          How to Shut Down Ubuntu
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on January 21, 2019
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-8" href="https://vitux.com/shell/">
+            Shell
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-find-files-on-the-ubuntu-command-line/" target="_self">
+          How to find files on the Ubuntu command line
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on June 20, 2019
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-8" href="https://vitux.com/shell/">
+            Shell
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-install-wine-on-ubuntu/" target="_self">
+          How to Install Wine on Ubuntu 18.04 LTS
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on September 20, 2018
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+        <li>
+         <a class="wpp-post-title" href="https://vitux.com/how-to-install-virtualbox-on-ubuntu/" target="_self">
+          How to Install VirtualBox on Ubuntu 18.04 LTS
+         </a>
+         <span class="wpp-meta post-stats">
+          <span class="wpp-date">
+           posted on November 5, 2018
+          </span>
+          |
+          <span class="wpp-category">
+           under
+           <a class="category category-10" href="https://vitux.com/desktop/">
+            Desktop
+           </a>
+           ,
+           <a class="category category-9" href="https://vitux.com/linux/">
+            Linux
+           </a>
+           ,
+           <a class="category category-8" href="https://vitux.com/shell/">
+            Shell
+           </a>
+           ,
+           <a class="category category-5" href="https://vitux.com/ubuntu/">
+            Ubuntu
+           </a>
+          </span>
+         </span>
+        </li>
+       </ul>
+      </aside>
+     </div>
+    </div>
+    <!-- .inner-wrap -->
+   </div>
+   <!-- #main -->
+   <footer class="clearfix" id="colophon">
+    <div class="footer-socket-wrapper clearfix">
+     <div class="inner-wrap">
+      <div class="footer-socket-area">
+       Copyright ©
+       <a href="https://vitux.com">
+        vitux.com
+       </a>
+       <nav class="small-menu clearfix">
+        <div class="menu-footer-menu-container">
+         <ul class="menu" id="menu-footer-menu">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-133" id="menu-item-133">
+           <a href="https://vitux.com/privacy-policy/">
+            Privacy Policy
+           </a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134" id="menu-item-134">
+           <a href="https://vitux.com/imprint/">
+            Imprint
+           </a>
+          </li>
+         </ul>
+        </div>
+       </nav>
+      </div>
+     </div>
+    </div>
+   </footer>
+   <a href="#masthead" id="scroll-up">
+   </a>
+  </div>
+  <!-- #page -->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-2155872-5', 'auto');
+			ga('set', 'anonymizeIp', true);
+			ga('send', 'pageview');
+  </script>
+  <script type="text/javascript">
+   (function(){
+                document.addEventListener('DOMContentLoaded', function(){
+                    let wpp_widgets = document.querySelectorAll('.popular-posts-sr');
+
+                    if ( wpp_widgets ) {
+                        for (let i = 0; i < wpp_widgets.length; i++) {
+                            let wpp_widget = wpp_widgets[i];
+                            WordPressPopularPosts.theme(wpp_widget);
+                        }
+                    }
+                });
+            })();
+  </script>
+  <script>
+   var WPPImageObserver = null;
+
+            function wpp_load_img(img) {
+                if ( ! 'imgSrc' in img.dataset || ! img.dataset.imgSrc )
+                    return;
+
+                img.src = img.dataset.imgSrc;
+
+                if ( 'imgSrcset' in img.dataset ) {
+                    img.srcset = img.dataset.imgSrcset;
+                    img.removeAttribute('data-img-srcset');
+                }
+
+                img.classList.remove('wpp-lazyload');
+                img.removeAttribute('data-img-src');
+                img.classList.add('wpp-lazyloaded');
+            }
+
+            function wpp_observe_imgs(){
+                let wpp_images = document.querySelectorAll('img.wpp-lazyload'),
+                    wpp_widgets = document.querySelectorAll('.popular-posts-sr');
+
+                if ( wpp_images.length || wpp_widgets.length ) {
+                    if ( 'IntersectionObserver' in window ) {
+                        WPPImageObserver = new IntersectionObserver(function(entries, observer) {
+                            entries.forEach(function(entry) {
+                                if (entry.isIntersecting) {
+                                    let img = entry.target;
+                                    wpp_load_img(img);
+                                    WPPImageObserver.unobserve(img);
+                                }
+                            });
+                        });
+
+                        if ( wpp_images.length ) {
+                            wpp_images.forEach(function(image) {
+                                WPPImageObserver.observe(image);
+                            });
+                        }
+
+                        if ( wpp_widgets.length ) {
+                            for (var i = 0; i < wpp_widgets.length; i++) {
+                                let wpp_widget_images = wpp_widgets[i].querySelectorAll('img.wpp-lazyload');
+
+                                if ( ! wpp_widget_images.length && wpp_widgets[i].shadowRoot ) {
+                                    wpp_widget_images = wpp_widgets[i].shadowRoot.querySelectorAll('img.wpp-lazyload');
+                                }
+
+                                if ( wpp_widget_images.length ) {
+                                    wpp_widget_images.forEach(function(image) {
+                                        WPPImageObserver.observe(image);
+                                    });
+                                }
+                            }
+                        }
+                    } /** Fallback for older browsers */
+                    else {
+                        if ( wpp_images.length ) {
+                            for (var i = 0; i < wpp_images.length; i++) {
+                                wpp_load_img(wpp_images[i]);
+                                wpp_images[i].classList.remove('wpp-lazyloaded');
+                            }
+                        }
+
+                        if ( wpp_widgets.length ) {
+                            for (var j = 0; j < wpp_widgets.length; j++) {
+                                let wpp_widget = wpp_widgets[j],
+                                    wpp_widget_images = wpp_widget.querySelectorAll('img.wpp-lazyload');
+
+                                if ( ! wpp_widget_images.length && wpp_widget.shadowRoot ) {
+                                    wpp_widget_images = wpp_widget.shadowRoot.querySelectorAll('img.wpp-lazyload');
+                                }
+
+                                if ( wpp_widget_images.length ) {
+                                    for (var k = 0; k < wpp_widget_images.length; k++) {
+                                        wpp_load_img(wpp_widget_images[k]);
+                                        wpp_widget_images[k].classList.remove('wpp-lazyloaded');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                wpp_observe_imgs();
+
+                // When an ajaxified WPP widget loads,
+                // Lazy load its images
+                document.addEventListener('wpp-onload', function(){
+                    wpp_observe_imgs();
+                });
+            });
+  </script>
+  <script type="text/javascript">
+   /*  */
+var a3_lazyload_params = {"apply_images":"1","apply_videos":"1"};
+var a3_lazyload_extend_params = {"edgeY":"0","horizontal_container_classnames":""};
+/*  */
+  </script>
+  <script defer="" src="https://vitux.com/wp-content/uploads/cache/fvm/1583252803/out/footer-935d2afa406c7e4ed77187acf420210d9256d42a.min.js" type="text/javascript">
+  </script>
+  <script>
+   /* loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){if(!w.loadCSS)w.loadCSS=function(){};var rp=loadCSS.relpreload={};rp.support=function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}}();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){if(link.addEventListener)link.removeEventListener("load",enableStylesheet);else if(link.attachEvent)link.detachEvent("onload",enableStylesheet);link.setAttribute("onload",null);link.media=finalMedia}if(link.addEventListener)link.addEventListener("load",enableStylesheet);else if(link.attachEvent)link.attachEvent("onload",enableStylesheet);setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3E3)};rp.poly=function(){if(rp.support())return;var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss", true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener)w.addEventListener("load",function(){rp.poly();w.clearInterval(run)});else if(w.attachEvent)w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}if(typeof exports!=="undefined")exports.loadCSS=loadCSS;else w.loadCSS=loadCSS})(typeof global!=="undefined"?global:this);
+  </script>
+  <script async="" style="display:none;" type="text/javascript">
+   __ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=0&shcb=32', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=0&shcb=32', false, [], true, false, false, false);
+  </script>
+  <script>
+   var _audins_dom="vitux_com",_audins_did=177389;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=188-0");
+  </script>
+  <noscript>
+   <div style="display:none;">
+    <img alt="Quantcast" border="0" height="1" src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.vitux_com,DomainId.177389" width="1"/>
+   </div>
+  </noscript>
+  <noscript>
+   <img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=20015427&amp;cv=2.0&amp;cj=1"/>
+  </noscript>
+  <script data-cfasync="false" type="text/javascript">
+   (function(){function b(g,c){for(var e=0;e<c.length;e++){var d=c[e];if(0==d.complete||"undefined"!=typeof d.readyState&&4>d.readyState){var f=d.getAttribute("src")||d.currentSrc;"undefined"!=typeof d.readyState&&0==d.readyState?d.addEventListener("loadstart",function(h){var k=h.getAttribute("src")||h.currentSrc;window.ezorqs(h,k)}):(f=d.getAttribute("src")||d.currentSrc,window.ezorqs(d,f));d.addEventListener("load",function(h){var k=h.currentTarget.getAttribute("src")||h.srcElement.currentSrc;window.ezorqe(h,
+k)});d.addEventListener("loadeddata",function(h){var k=h.currentTarget.getAttribute("src")||h.srcElement.currentSrc;window.ezorqe(h,k)});d.addEventListener("error",function(h){var k=h.currentTarget.getAttribute("src")||h.srcElement.currentSrc;window.ezorqe(h,k)})}}}function a(g){for(var c=0;c<document.styleSheets.length;c++)if(document.styleSheets[c].href==g)return!0;return!1}b("img",document.querySelectorAll("img"));b("video",document.querySelectorAll("video"));b("audio",document.querySelectorAll("audio"));
+(function(g){for(var c=0;c<g.length;c++){var e=g[c];if(("preload"==e.getAttribute("rel")||"stylesheet"==e.getAttribute("rel"))&&null!=e.getAttribute("href")&&a(e.getAttribute("href"))){window.ezorqs(e,e.getAttribute("href"));var d=document.createElement("img");d.onerror=function(f){"undefined"!=typeof f.path&&"undefined"!=typeof f.path[0].currentSrc?window.ezorqe(e,f.path[0].currentSrc):"undefined"!=typeof f.srcElement&&"undefined"!=typeof f.srcElement.href&&window.ezorqe(e,f.srcElement.href)};d.src=
+e.getAttribute("href")}}})(document.querySelectorAll("link"));"undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(16)&&"undefined"!==typeof window.__ez.sshsdef&&!1===window.__ez.sshsdef&&Element.prototype.addEventListener&&("function"==typeof window.onload&&(window.addEventListener("load",window.onload),window.onload=null),"function"==typeof document.onload&&(document.addEventListener.addEventListener("load",document.onload),document.onload=null))})();
+  </script>
+ </body>
+</html>
+<!-- Cachify | http://cachify.de
+Memcached @ 03.03.2020 17:32:52 -->

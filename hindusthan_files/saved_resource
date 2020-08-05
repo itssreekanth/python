@@ -1,0 +1,32 @@
+
+var ftGUID_4214881="4418F54FBED23B";
+var ftConfID_4214881="0";
+var ftParams_4214881="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_ifb=1&ft_domain=www.hindustantimes.com&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.hindustantimes.com%2Ftop-news%2F&cachebuster=274037.1582907306";
+var ftKeyword_4214881="";
+var ftCustom_4214881="";
+var ftSection_4214881="";
+var ftSegment_4214881="";
+var ftSegmentList_4214881=[];
+var ftRuleMatch_4214881="0";
+var ftTimestamp_4214881="1582774307";
+var ftGeoC2_4214881="in";
+var ftGeoState_4214881="tg";
+var ftGeoCity_4214881="hyderabad";
+var ftISP_4214881="bharat sanchar nigam limited";
+var ftSpeed_4214881="broadband";
+var ftDMA_4214881="356006";
+var ftLong_4214881="78.4722";
+var ftLat_4214881="17.3874";
+var ftPostal_4214881="500001";
+var ftTimeZone_4214881="530";
+var ftMobileCarrier_4214881="";
+var ftImp4214881 = {};
+ftImp4214881.privacy = "x";
+ftImp4214881.guidAge = "22";
+ftImp4214881.impID = "0CFBD86D-520E-99FD-5D84-094D9E68AF77";
+ftImp4214881.duid = "FT:4418F54FBED23B";
+
+ftImp4214881.ft_tpplid = "";
+ftImp4214881.ft_c = {};
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/421/4214881/2776206/js/j-4214881-2776206.js" id="ftscript_m4214881" name="ftscript_m4214881"></scr'+'ipt>');

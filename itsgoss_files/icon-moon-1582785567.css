@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SIQ_icomoon';
+    src:    url(../../../../../../../../../../plugins/searchiq/assets/3.2/fonts/SIQ_icomoon.eot?o72w6t);
+    src:    url('../../../../../../../../../../plugins/searchiq/assets/3.2/fonts/SIQ_icomoon.eot?o72w6t#iefix') format('embedded-opentype'),
+        url(../../../../../../../../../../plugins/searchiq/assets/3.2/fonts/SIQ_icomoon.ttf?o72w6t) format('truetype'),
+        url(../../../../../../../../../../plugins/searchiq/assets/3.2/fonts/SIQ_icomoon.woff?o72w6t) format('woff'),
+        url('../../../../../../../../../../plugins/searchiq/assets/3.2/fonts/SIQ_icomoon.svg?o72w6t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

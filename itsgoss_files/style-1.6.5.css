@@ -1,0 +1,782 @@
+/* wrappers used to manage max width and padding for page templates */
+#wp-coupons-outer-wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#wp-coupons-wrapper {
+	max-width: 1200px;
+	min-width: 200px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* our main container id */
+#wp-coupons, .wp-coupons {
+	overflow: hidden;
+	margin: 20px auto;
+	text-align: left;
+}
+#wp-coupons *, .wp-coupons * {
+	text-transform: none;
+}
+#wp-coupons img, .wp-coupons img, .wp-coupons-coupon-panel img {
+	opacity: 1.0;
+	display: block;
+	float: none;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	max-width: 100%;
+}
+
+body .wp-coupons-button, body a.wp-coupons-button {
+	background: #237dac; 
+	padding: 15px; 
+	font-weight: bold; 
+	color: #ffffff; 
+	display: block; 
+	text-align: center;
+	border-radius: 3px;
+	border: 2px solid #237dac;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+body .wp-coupons-button:hover, body a.wp-coupons-button:hover {
+	background: none;
+	color: #0872aa;
+}
+
+.wp-coupons-discount-percent {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2c3644;
+	color: #ffffff;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin: 0px;
+}
+
+.wp-coupons-expiration {
+	color: #999999;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	min-height: 25px;
+	max-height: 25px;
+	margin-top: 10px;
+}
+
+.wp-coupons-discount-code {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #237dac;
+	color: #ffffff;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin: 0px;
+}
+
+.wp-coupons-discount-code.wp-coupons-copy {
+	cursor: pointer;
+}
+
+.wp-coupons-banner.wp-coupons-coupon-panel .wp-coupons-discount-code span {
+	margin: 0px; 
+	font-size: 12px; 
+	position: absolute; 
+	right: 0px; 
+	top: 0px; 
+	padding: 2px 8px; 
+	font-style: italic; 
+	border-left: 1px dashed; 
+	border-bottom: 1px dashed;
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.wp-coupons-coupon-panel .wp-coupons-discount-code span {
+	display: inline; 
+	margin: 0px 0px 0px 10px; 
+	padding: 0px 0px 0px 10px; 
+	font-size: 12px; 
+	font-style: italic; 
+	border-left: 1px dashed; 
+	vertical-align: middle;
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+/* Coupon Archive */
+.wp-coupons-before-archive-content {
+	margin-top: 20px;
+}
+.wp-coupons-after-archive-content {
+	margin-bottom: 20px;
+}
+.wp-coupons-nav {
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #E6E9EE;
+}
+.wp-coupons-nav a {
+	display: inline-block;
+	font-size: 24px;
+	line-height: normal;
+	margin-right: 20px;
+	border: none;
+	text-decoration: none;
+	padding: 0px;
+	color: #237dac;
+}
+.wp-coupons-nav a:visited {
+	color: #237dac;
+}
+.wp-coupons-nav a:hover {
+	color: #0872aa;
+}
+.wp-coupons-nav a.wp-coupons-nav-selected {
+	font-weight: bold;
+	color: #237dac;
+}
+.wp-coupons-nav .wp-coupons-nav-dropdown {
+	width: auto;
+	height: 50px;
+	min-height: 50px;
+	padding: 10px 15px;
+	margin: 0px 0px 5px 0px;
+	background: #ffffff;
+	font-size: 16px;
+}
+.wp-coupons-subnav {
+	margin-bottom: 10px;
+}
+.wp-coupons-subnav a {
+	font-size: 18px;
+	color: #237dac;
+	border-color: #237dac;
+	display: inline-block;
+	line-height: normal;
+	border: 1px solid;
+	padding: 5px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin: 0px 5px 5px 0px;
+}
+.wp-coupons-subnav a.active, .wp-coupons-subnav a:hover {
+	color: #0872aa;
+	border-color: #0872aa;
+}
+
+/* Navigation Styles */
+@media only screen and (min-width:794px) {
+	.wp-coupons-nav-style-vertical .wp-coupons-nav {
+		float: left;
+		max-width: 25%;
+		margin-right: 20px;
+		border: none;
+	}
+	.wp-coupons-nav-style-vertical .wp-coupons-coupons-container {
+		overflow: hidden;
+	}
+	.wp-coupons-nav-style-vertical .wp-coupons-nav a {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.coupon-row {
+	overflow: hidden;
+}
+.coupon-description {
+	font-size: 18px;
+	line-height: 28px;
+	min-height: 90px;
+	max-height: 90px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+.coupon-panel, .wp-coupons-coupon {
+	text-align: left;
+	background: #E6E9EE;
+	position: relative;
+	float: left;
+	width: 32%;
+	margin-bottom: 20px;
+	margin-right: 2%;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+.wp-coupons-coupon-panel {
+	text-align: left;
+	background: #E6E9EE;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+
+/* Archive Layouts
+********************************************************/
+@media(min-width: 1100px) {
+	/* 4 Columns */
+	.coupon-row.four-columns .wp-coupons-coupon {
+		width: 23.5%;
+		margin-right: 2%;
+	}
+	.coupon-row.four-columns .wp-coupons-coupon.fourth {
+		margin-right: 0%;
+	}
+	/* 5 Columns */
+	.coupon-row.five-columns .wp-coupons-coupon {
+		width: 19%;
+		margin-right: 1.25%;
+	}
+	.coupon-row.five-columns .wp-coupons-coupon.fifth {
+		margin-right: 0%;
+	}
+}
+@media(min-width: 794px) {
+	/* 2 Columns */
+	.coupon-row.two-columns .wp-coupons-coupon {
+		width: 49%;
+	}
+	.coupon-row.two-columns .wp-coupons-coupon.second {
+		margin-right: 0%;
+	}
+	/* List View */
+	.wp-coupons-coupon.list {
+		width: 100%;
+	}
+	.wp-coupons-coupon.list .coupon-panel-image-wrapper {
+		float: left;
+		width: 40%;
+	}
+	.wp-coupons-coupon.list .wp-coupons-coupon-panel .wp-coupons-coupon-content {
+		overflow: hidden;
+	}
+	.wp-coupons-coupon.list .wp-coupons-coupon-panel h2.coupon-title {
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: 100%;
+	}
+	.wp-coupons-coupon.list .wp-coupons-coupon-panel .coupon-description {
+		min-height: 0px;
+		max-height: none;
+	}
+	.wp-coupons-coupon.list .wp-coupons-coupon-panel .coupon-separator {
+		display: none;
+	}
+	.wp-coupons-coupon.list .wp-coupons-coupon-panel .coupon-type {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+	}
+	.wp-coupons-coupon.list .wp-coupons-coupon-panel .coupon-link {
+		position: absolute;
+		bottom: 12px;
+		right: 12px;
+	}
+	/* List Compact View */
+	.wp-coupons-coupon.list.compact .wp-coupons-coupon-panel h2.coupon-title {
+		display: block;
+		margin-top: 10px;
+	}
+	.wp-coupons-coupon.list.compact .wp-coupons-coupon-panel .wp-coupons-coupon-content {
+		padding: 0px 15px 10px 15px !important;
+	}
+	/* List Compact + Minimal View */
+	.wp-coupons-coupon.list.minimal {
+		margin: 20px 0px 20px 0px;
+	}
+	.wp-coupons-coupon.list.minimal, .wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel {
+		background: none;
+	}
+	.wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel .wp-coupons-discount-percent, .wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel .wp-coupons-discount-code {
+		display: none;
+	}
+	.wp-coupons-coupon.list.minimal .coupon-panel-image-wrapper {
+		width: 200px;
+		min-width: 0px;
+	}
+	.wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel h2.coupon-title {
+		display: block;
+		margin-top: 5px;
+	}
+	.wp-coupons-coupon.list.compact .wp-coupons-coupon-panel .coupon-description, .wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel .coupon-description {
+		display: inline;
+		margin-right: 10px;
+	}
+	.wp-coupons-coupon.list.compact .wp-coupons-coupon-panel .wp-coupons-type-cta-container, .wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel .wp-coupons-type-cta-container {
+		display: inline;
+	}
+	.wp-coupons-coupon.list.compact .wp-coupons-coupon-panel .coupon-type, .wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel .coupon-type {
+		display: none;
+	}
+	.wp-coupons-coupon.list.compact .wp-coupons-coupon-panel .coupon-link, .wp-coupons-coupon.list.minimal .wp-coupons-coupon-panel .coupon-link {
+		position: relative;
+		bottom: auto;
+		right: auto;
+		display: inline;
+		float: none;
+		font-size: 18px;
+		line-height: 28px;
+		white-space: nowrap;
+	}
+}
+/*code only template*/
+.wp-coupons-coupon-panel.codeonly {
+	text-align: center;
+	background: none;
+}
+.wp-coupons-coupon-panel.codeonly .wp-coupons-discount-percent {
+	display: none;
+}
+.wp-coupons-coupon-panel.codeonly .coupon-panel-image-wrapper a {
+	display: none;
+}
+.wp-coupons-coupon-panel.codeonly .wp-coupons-coupon-content {
+	display: none;
+}
+.wp-coupons-coupon-panel.codeonly .wp-coupons-discount-code {
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+}
+.wp-coupons-coupon.third {
+	margin-right: 0;
+}
+.wp-coupons-coupon-panel .wp-coupons-discount-percent, .wp-coupons-coupon-panel .wp-coupons-discount-code {
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.wp-coupons-coupon-panel .coupon-title {
+	font-size: 20px;
+	line-height: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin: 20px 0px 10px 0px;
+}
+.wp-coupons-coupon-panel a {
+	text-decoration: none;
+	border: none;
+}
+.wp-coupons-coupon-panel img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+.wp-coupons-coupon-panel hr {
+	margin: 10px 0px;
+	padding: 0px;
+	height: 0px;
+	width: 100%;
+	border-top: 1px solid #d0d2d7;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+}
+.wp-coupons-type-cta-container {
+	overflow: hidden;
+}
+.wp-coupons-coupon-panel .coupon-link {
+	font-size: 16px;
+	line-height: normal;
+	float: right; 
+	border: none;
+	text-decoration: none;
+	color: #237dac;
+	display: block;
+}
+.wp-coupons-coupon-panel .coupon-link:visited {
+	color: #237dac;
+}
+.wp-coupons-coupon-panel .coupon-link:hover {
+	color: #0872aa;
+}
+.wp-coupons-coupon-panel .coupon-type, .wp-coupons-coupon-panel .coupon-type:hover, .wp-coupons-coupon-panel .coupon-type:visited  {
+	color: #2c3644;
+	border: none;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: normal;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media only screen and (min-width:1001px) and (max-width:1100px) {
+	.coupon-row {
+		overflow: visible;
+	}
+	.wp-coupons-coupon {
+		width: 32%;
+		margin-right: 2%;
+	}
+	.wp-coupons-coupon.third {
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width:1000px) {
+	.coupon-row {
+		overflow: visible;
+	}
+	.wp-coupons-coupon {
+		width: 49%;
+	}
+	.wp-coupons-coupon.third {
+		margin-right: 2%;
+	}
+	.wp-coupons-coupon.second {
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width:794px) {
+	.wp-coupons-nav a {
+		display: block;
+	}
+	.front-view-content {
+		min-height: none;
+	}
+	.wp-coupons-coupon {
+		width: 100% !important;
+		margin-right: 0;
+	}
+	.coupon-description {
+		min-height: 0px;
+		max-height: none;
+	}
+}
+
+/* Single Coupon Post */
+.wp-coupons-banner {
+	text-align: left;
+	width: 350px;
+	float: right;
+	margin: 0px 0px 20px 20px;
+	overflow: hidden;
+	background: #E6E9EE;
+	margin-bottom: 20px;
+}
+
+.wp-coupons-banner img {
+	display: block;
+	max-width: 100%;
+	margin: 0px;
+	height: auto;
+}
+
+body .wp-coupons-banner .coupon-title {
+	font-size: 20px;
+	line-height: normal;
+	margin: 10px 0px 10px 0px;
+}
+
+.wp_coupons_banner_content {
+	overflow: hidden;
+}
+
+.wp-coupons-banner .wp-coupons-discounts {
+	margin: 0px;
+	overflow: hidden;
+}
+.wp-coupons-banner .wp-coupons-discount-percent, .wp-coupons-banner .wp-coupons-discount-code {
+	position: relative;
+	width: 100%;
+	float: left;
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.wp-coupons-banner .wp-coupons-discount-percent {
+	background: #2c3644;
+}
+
+.wp-coupons-banner .wp-coupons-discount-code {
+	background: #237dac;
+}
+
+.wp-coupons-banner .wp-coupons-discount-description {
+	font-size: 18px;
+	padding-bottom: 10px;
+	line-height: 28px;
+}
+
+.wp-coupons-banner .wp-coupons-expiration {
+	margin: 0px;
+}
+
+.wp-coupons-banner a.wp-coupons-button {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.wp-coupons-banner-text {
+	padding: 10px 25px 25px 25px;
+}
+
+body a.wp-coupons-breadcrumbs {
+	font-size: 14px; 
+	font-style: italic;
+	text-decoration: none;
+	border: none;
+	color: #237dac;
+	display: block;
+}
+
+body a.wp-coupons-breadcrumbs:visited {
+	color: #237dac;
+}
+
+body a.wp-coupons-breadcrumbs:hover {
+	color: #0872aa;
+}
+
+@media only screen and (max-width:794px) {
+	.wp-coupons-banner {
+		width: 100%;
+		float: none;
+		margin: 0px 0px 20px 0px;
+	}
+	.wp-coupons-banner img {
+		max-width: 100%;
+		float: none;
+	}
+	.wp-coupons-navigation, .wp-coupons-navigation ul {
+		text-align: center;
+	}
+}
+
+/* Single Coupon Shortcode + Widget */
+.wp-coupons-widget .coupon-description, .wp-coupons-widget .wp-coupons-expiration, .wp-coupons-shortcode .coupon-description, .wp-coupons-shortcode .wp-coupons-expiration {
+	min-height: 0px;
+	max-height: none;
+}
+
+/*.wp-coupons-widget .wp-coupons-expiration {
+	padding-bottom: 10px;
+}*/
+
+.wp-coupons-shortcode {
+	overflow: hidden;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+/*.wp-coupons-shortcode-container, .wp-coupons-widget {
+	background: #E6E9EE; 
+	position: relative;
+}*/
+
+/*.wp-coupons-widget img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}*/
+
+/*.wp-coupons-shortcode .shortcode-coupon-description, .wp-coupons-widget .widget-coupon-description {
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}*/
+
+/*.wp-coupons-shortcode .wp-coupons-expiration, .wp-coupons-widget .wp-coupons-expiration {
+	margin: 0px;
+}*/
+
+.wp-coupons-shortcode a.wp-coupons-button, .wp-coupons-widget a.wp-coupons-button {
+	margin-top: 10px;
+}
+
+/*.widget-coupon-title, .wp-coupons-shortcode-title {
+	font-size: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}*/
+
+/* Pagination */
+.wp-coupons-navigation {
+	margin: 0px 0px 20px 0px;
+	overflow: hidden;
+}
+.wp-coupons-navigation ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.wp-coupons-navigation li a, .wp-coupons-navigation li a:hover, .wp-coupons-navigation li a:visited, .wp-coupons-navigation li.active a, .wp-coupons-navigation li.disabled, body .wp-coupons-navigation .page-numbers, body .wp-coupons-navigation .page-numbers:visited {
+	display: inline-block;
+	color: #fff;
+	text-decoration:none;
+	background-color: #237dac;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 12px;
+	font-size: 16px;
+	margin: 0px 3px 5px 0px;
+}
+.wp-coupons-navigation li a, .wp-coupons-navigation .page-numbers {
+	padding: 12px;
+}
+
+.wp-coupons-navigation li {
+	display: inline-block;
+}
+
+.wp-coupons-navigation li a:hover, .wp-coupons-navigation li.active a, .wp-coupons-navigation .page-numbers:hover {
+	background-color: #0872aa;
+}
+
+.wp-coupons-navigation li.active a, .wp-coupons-navigation .page-numbers.current {
+	/*padding: 15px;*/
+}
+.wp-coupons-navigation li.active a, .wp-coupons-navigation .page-numbers.current {
+	padding: 15px;
+}
+
+.wp-coupons-navigation br {
+	display: none;
+}
+
+/* Attribution/Affiliate Link */
+.wp-coupons-attribution-link {
+	overflow: hidden;
+}
+.wp-coupons-attribution-link a, .wp-coupons-attribution-link a:visited, .wp-coupons-attribution-link a:link {
+	padding-top: 3px;
+	font-size: 12px; 
+	float: right; 
+	font-style: italic;
+	color: #333333;
+}
+.wp-coupons-attribution-link a:hover, .wp-coupons-attribution-link a:active {
+	color: #0872aa;
+}
+
+/* Click to Reveal */
+.wp-coupons-discount-code.wp-coupons-ctr {
+	overflow: visible;
+	cursor: pointer;
+	padding-right: 10px;
+}
+.wp-coupons-ctr:before {
+	content: "";
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-width: 0 20px 20px 0;
+	border-style: solid;
+	border-color: #1f6e96 transparent;
+	content: "";
+	cursor: pointer;
+}
+.wp-coupons-ctr:after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    top: 20px;
+    right: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #237dac;
+    cursor: pointer;
+}
+#wp-coupons-ctr-popup-wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background: rgba(0,0,0,0.7);
+}
+#wp-coupons-ctr-popup {
+	position: relative;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 25px;
+	background: #eeeeee;
+	color: #333333;
+	text-align: center;
+}
+#wp-coupons-ctr-popup-close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	font-size: 20px;
+	line-height: 1ex;
+	color: #aaaaaa;
+	cursor: pointer;
+}
+#wp-coupons-ctr-popup img {
+	width: auto;
+	max-width: 100%;
+	max-height: 150px;
+	margin: 0px auto 10px auto;
+}
+#wp-coupons-ctr-popup #wp-coupons-ctr-title {
+	font-size: 20px;
+	margin: 0px auto 10px auto;
+}
+#wp-coupons-ctr-popup #wp-coupons-ctr-discount-percent {
+	font-size: 16px;
+	margin: 0px auto 10px auto;
+}
+#wp-coupons-ctr-popup #wp-coupons-ctr-discount-url {
+	font-size: 12px;
+	margin: 0px auto 10px auto;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#wp-coupons-ctr-popup #wp-coupons-ctr-discount-code {
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+	background: #ffffff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+	display: block;
+	max-width: 100%;
+}
+#wp-coupons-ctr-popup #wp-coupons-ctr-discount-code div {
+	display: inline-block;
+	padding: 10px;
+	max-width: 70%;
+	word-wrap: break-word;
+	font-weight: bold;
+}
+#wp-coupons-ctr-popup #wp-coupons-ctr-discount-code span {
+	float: right;
+	padding: 10px;
+	background: #237dac;
+	color: #ffffff;
+}

@@ -1,0 +1,6 @@
+
+How to change a user password in Ubuntu
+Open the terminal application by pressing Ctrl + Alt + T.
+To change a password for user named tom in Ubuntu, type: sudo passwd tom.
+To change a password for root user on Ubuntu Linux, run: sudo passwd root.
+And to change your own password for Ubuntu, execute: passwd.
