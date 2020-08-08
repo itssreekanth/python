@@ -1,0 +1,30 @@
+from tkinter import *
+
+class App:
+    def __init__(self, master):
+        fm = Frame(master)
+        tm = Frame(master)
+        km = Frame(master)
+        #Button(fm, text='Top').pack(side=TOP, anchor=W, fill=X, expand=YES)
+        #Button(fm, text='Center').pack(side=TOP, anchor=W, fill=X, expand=YES)
+        Button( text='MAIN').pack(side=LEFT, anchor=W, fill=X, expand=YES)
+        Button(km, text='1').pack(side=LEFT,fill =X,expand = YES)
+        Button(km, text='2').pack(side=LEFT,fill =X,expand = YES)
+        km.pack(fill=BOTH, expand=YES)
+        Button(fm, text='3').pack(side=LEFT,fill =X,expand = YES)
+        Button(fm, text='4',width =14).pack(side=LEFT,expand = YES)
+        fm.pack(fill=BOTH, expand=YES)
+        update = Button(tm, text='5',width = 4)
+        update.pack(side=RIGHT,ipadx = 5,ipady=5,fill =X,expand = YES)
+        snapButton = Button(tm,text = '6',width = 4)
+       	snapButton.pack(side = RIGHT,ipadx = 5,ipady=5)
+        #Button(tm, text='6').pack(side=BOTTOM,fill =X,expand = YES)
+        #Button( text='8').place(x = 20, y = 30 + 1*30, width=120, height=25)
+        tm.pack(fill = BOTH,expand = YES)
+        #Button( text='7').grid(row=0, column=1, padx=10, pady=10)
+        
+root = Tk()
+root.option_add('*font', ('verdana', 12, 'bold'))
+root.title("Pack - Example 12")
+display = App(root)
+root.mainloop()
