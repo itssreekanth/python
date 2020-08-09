@@ -1,6 +1,6 @@
 import tkinter
-
-window = tkinter.Tk()
+from tkinter import *
+window = Tk()
 
 #w = tk.Label(root, text="red", bg="red", fg="white")
 #w.pack(padx=5, pady=10, side=tk.LEFT)
@@ -20,7 +20,17 @@ new = tkinter.Button(window, text="new", bg="orange", fg="black")
 new.grid(row=3, column=2 )
 btn_snapshot = tkinter.Button(window, text="capture", bg="skyblue", fg="black")
 btn_snapshot.grid(row=3, column=4 )
-nametext.Update(text="hi")
+nametext.insert(0, "a default value")
+btn_snapshot.destroy()
+
+
+
+
+s = nametext.get()
+print(s)
+nametext.delete(0,END)
+#mresult = tkinter.Label(window, textvariable = nametext)
+#mresult.pack()
 #w = tk.Label(root, text="blue", bg="blue", fg="white")
 #w.pack(padx=5, pady=20, side=tk.LEFT)
 tkinter.mainloop()
