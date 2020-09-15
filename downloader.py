@@ -7,10 +7,9 @@ from tkinter.messagebox import askyesno
 
 filesize = 0
 
-def down_thread():
+def downloader():
 	thread = Thread(target = downloader)
 	thread.start()
-
 def progress(chunk,file_handle,remaining):
 	global download_status
 	file_downloaded = file_size-remaining
@@ -20,13 +19,15 @@ def progress(chunk,file_handle,remaining):
 def downloader():
 	global file_size, download_status
 	download_btn.config(state = DISABLED)
+	download_status.config(text='Please Wait...')
 	download_status.place(x=230,y=250)
 	try:
 		url1 = url.get()
 		path = askdirectory()
 		yt = youtube(url1,on_progress_callback=progress)
 		video = yt.streams.filter(progressive = True, file_extension = 'mp4').first()
-		print(yt.streams.filter(progressive = True, file_extension = 'mp4'))
+		#print(yt.streams.filter(progressive = True, file_extension = 'mp4'))
+
 		file_size = video.filesize
 		video.download(path)
 		download_status.config(text = 'Download Finish...')
@@ -42,6 +43,7 @@ def downloader():
 		download_btn.config(state=NORMAL)
 		#download_status.config(text=" ")
 		url.delete(0,END)
+
 
 root = Tk()
 root.geometry('600x400')
@@ -68,7 +70,7 @@ download_btn_img = Image.open('download_button.png')
 download_btn_img = download_btn_img.resize((200,50),Image.ANTIALIAS)
 download_btn_img = ImageTk.PhotoImage(download_btn_img)
 
-download_btn = Button(root, width =200, height = 50, bg = 'white', relief=FLAT,activebackground='black',command = down_thread)
+download_btn = Button(root, width =200, height = 50, bg = 'white', relief=FLAT,activebackground='black',command = downloader)
 download_btn.config(image = download_btn_img)
 download_btn.place(x = 220,y = 170)
 
