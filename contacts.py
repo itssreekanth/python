@@ -1,7 +1,7 @@
 import requests 
 from bs4 import BeautifulSoup
 def contact():
-	url=open("WhatsApp.html","r")
+	url=open("WhatsApp3.html","r")
 	url=url.read()
 	#print(url)
 	soup=BeautifulSoup(url,'html.parser')
@@ -40,4 +40,7 @@ def contact():
 	numbers = set(numbers)
 	numbers = list(numbers)
 	return numbers
-#print(len(contact())-236-136)
+a = contact()
+f = open('contacts2.txt','w+')
+f.write('num = ')
+f.write(str(a))

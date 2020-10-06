@@ -16,7 +16,12 @@ confidencel = tkinter.Label(window, text="Confidence : ")
 confidencel.grid(row=2, column=1 ,columnspan=2)
 confidenceltext = tkinter.Entry(window, width=23)
 confidenceltext.grid(row=2, column=3 ,columnspan=2)
-new = tkinter.Button(window, text="new", bg="orange", fg="black")
+def ca():
+	window.iconify()
+def wo():
+	window.withdraw()
+	ca()
+new = tkinter.Button(window, text="new", bg="orange", fg="black",command = wo)
 new.grid(row=3, column=2 )
 btn_snapshot = tkinter.Button(window, text="capture", bg="skyblue", fg="black")
 btn_snapshot.grid(row=3, column=4 )
@@ -33,5 +38,6 @@ nametext.delete(0,END)
 #mresult.pack()
 #w = tk.Label(root, text="blue", bg="blue", fg="white")
 #w.pack(padx=5, pady=20, side=tk.LEFT)
+
 tkinter.mainloop()
 

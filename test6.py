@@ -1,3 +1,4 @@
-import numpy as np
-nam1 = ['surya','surya narayana','akash','abhi f2','vivek f2','murali','mitra','prabha','vinay f2','vikranth','ramana','ramana ckp','vali','transformer']
-print(np.random.choice(nam1,5))
+import os,subprocess
+#os.system("sudo apt update && sudo apt install python3-pip && sudo apt install python3-tk && python3 -m pip install pyscreenshot && python3 -m pip install pil")
+a = os.popen("apt-cache policy sox").readlines()
+print('none' in a[1])
