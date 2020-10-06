@@ -12,6 +12,7 @@ try:
 			self.count=66600
 			self.root = Tk()
 			self.root.title("StopWatch")
+			self.root.iconphoto(False, PhotoImage(file='clock.png'))
 			self.root.geometry('300x260')
 			self.d_time="00:00:00"
 			self.timer_label = Label(self.root,text='Set timer : ',font = ('1',12))
@@ -114,8 +115,7 @@ try:
 					display = "   "+watch
 					self.label['text'] = display
 				else:self.thread.cancel()
-				if self.apprun:
-					self.option1.setText(watch)
+				if self.apprun:self.option1.setText(watch)
 				else:self.thread.cancel()
 				self.count+=1
 				time.sleep(1-change)
